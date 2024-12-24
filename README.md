@@ -53,4 +53,6 @@ How to Use
     Watch the bars change colors and positions as the sorting algorithm progresses.
   Reset and Repeat:
     Use the "Generate New Array" button to start with a new random array or choose another sorting algorithm.
+
+    
 Check out the live demo of the Sorting Visualizer [here](https://sahitha-chunduri.github.io/Sorting-Visualizer/).
