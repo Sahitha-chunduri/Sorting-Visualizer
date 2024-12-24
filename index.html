@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading-text">Sorting Visualizer</h1>
+    <div class="array-container" id="array-container"></div>
+    <div class="buttons">
+      <button onclick="generatearray()">Generate New Array</button>
+      <button onclick="resetColors(); bubblesort();">Bubble Sort</button>
+      <button onclick="resetColors(); selectionsort();">Selection Sort</button>
+      <button onclick="resetColors(); insertionsort();">Insertion Sort</button>
+      <button onclick="resetColors(); mergesort();">Merge Sort</button>
+      <button onclick="resetColors(); quicksort();">Quick Sort</button>
+    </div>
+  </div>
+
+  <script type="module">
+    import { generatearray } from "./script.js";
+    import { bubblesort } from "./bubblesort.js";
+    import { selectionsort } from "./selectionsort.js";
+    import { insertionsort } from "./insertionsort.js";
+    import { mergesort } from "./mergesort.js";
+    import { quicksort } from "./quicksort.js";
+    import {resetColors} from "./script.js";
+    
+    window.generatearray = generatearray;
+    window.bubblesort = bubblesort;
+    window.selectionsort = selectionsort;
+    window.insertionsort = insertionsort;
+    window.mergesort = mergesort;
+    window.quicksort = quicksort;
+    window.resetColors = resetColors;
+  </script>
+</body>
+</html>

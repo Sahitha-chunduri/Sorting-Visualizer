@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60vh;
+    width: 90%; 
+    max-width: 150vh; 
+    background-color: #8A63D2;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto; 
+    position: relative;
+}
+
+.array-bar {
+    background: white;
+    margin: 0 2px;
+    flex: 1;
+    border-radius: 5px;
+    position: relative;
+    transition: height 0.3s ease;
+}
+
+.array-bar:hover {
+    background: #ddd;
+}
+
+.array-bar::after {
+    content: attr(data-height); 
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.array-bar:hover::after {
+    opacity: 1;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 15px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 5px;
+    width: auto;
+    max-width: 150px;
+}
+
+button:hover {
+    background-color: #f3f3f3;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .array-container {
+        height: 50vh; 
+        width: 80%; 
+    }
+
+    button {
+        font-size: 12px; 
+        padding: 8px 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 1.5rem; 
+    }
+
+    .array-container {
+        height: 40vh; 
+        width: 95%; 
+    }
+
+    button {
+        font-size: 10px; 
+        padding: 6px 10px;
+        margin: 10px 5px; 
+    }
+
+    .array-bar::after {
+        font-size: 10px; 
+    }
+}
