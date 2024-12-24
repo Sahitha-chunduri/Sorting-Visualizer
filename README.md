@@ -6,11 +6,11 @@ The Sorting Visualizer is a web-based tool that visually demonstrates how differ
 Features
 Generate New Array: Create a new array of random heights to visualize sorting algorithms.
 Sorting Algorithms Supported:
-  Bubble Sort
-  Selection Sort
-  Insertion Sort
-  Merge Sort
-  Quick Sort
+  Bubble Sort,
+  Selection Sort,
+  Insertion Sort,
+  Merge Sort,
+  Quick Sort.
 
 Dynamic Visualization: 
   Bars change colors to indicate comparisons and sorted elements.
